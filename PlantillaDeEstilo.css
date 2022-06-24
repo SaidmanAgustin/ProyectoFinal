@@ -11,8 +11,6 @@ html,body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
-
 }
 @media all  and (min-width: 50px) and (max-width: 800px) {
                 /**menu**/
