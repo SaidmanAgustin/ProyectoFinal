@@ -356,6 +356,10 @@ nav ul li a:hover:before{
     transform: scaleX(1);
     transform-origin: left;
 }
+#ANIMACIONMENU{
+    animation: bounce;
+    animation-duration: 2s; 
+}
         /**tabla de discos **/
 #TituloDiscos{
     color:#0ED352;
@@ -371,6 +375,8 @@ table{
     width: 100%;
     margin-bottom: 100px;
     margin-top: 10%;
+    animation: bounce;
+    animation-duration: 2s;
 }
 th, td{
  padding: 20px;
@@ -558,6 +564,10 @@ table, th, td{
 .Buton:hover{
      background-color: rgba(105, 0, 0, 0.795);
 }
+#relleno{
+    animation: jackInTheBox;
+    animation-duration: 2s; 
+}
      /**logo de pagina principal **/
 #LOGO{ 
    padding: none;
@@ -567,6 +577,9 @@ table, th, td{
    margin-left:35%;
    align-items: center;
    margin-bottom: 2%; 
+   animation: flash, pulse; 
+   animation-duration: 10s; 
+   
 }
      /**logo de menu**/
 #LOGOP{
