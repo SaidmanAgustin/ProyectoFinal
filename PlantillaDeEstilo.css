@@ -573,12 +573,17 @@ table, th, td{
    padding: none;
    width: 400px; 
    right: auto;
-   margin-top:3%;
-   margin-left:35%;
+   margin-top: 3%;
+   margin-left: 35%;
    align-items: center;
    margin-bottom: 2%; 
    animation: flash, pulse; 
-   animation-duration: 10s; 
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-delay: 1s;
+   animation-timing-function: cubic-bezier(1s, 2s, 0.5s);
+   
+
    
 }
      /**logo de menu**/
