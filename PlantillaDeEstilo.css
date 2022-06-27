@@ -578,10 +578,8 @@ table, th, td{
    align-items: center;
    margin-bottom: 2%; 
    animation: flash, pulse; 
-   animation-duration: 10s;
    animation-iteration-count: infinite;
-   animation-delay: 1s;
-   animation-timing-function: cubic-bezier(1s, 2s, 0.5s);
+   animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1)
    
 
    
