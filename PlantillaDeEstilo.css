@@ -12,7 +12,7 @@ html,body{
     flex-direction: column;
     min-height: 100vh;
 }
-@media all  and (min-width: 50px) and (max-width: 800px) {
+@media screen  and (min-width: 50px) and (max-width: 800px) {
                 /**menu**/
     nav {
         display: flex;
@@ -317,30 +317,32 @@ nav img{
     top: 2%;
     margin-left: 10%;
 }
-ul {
+#LogoMenu{
+    display:flex;
+    flex-direction:row-reverse;
+    width: 150px;
+    position: relative;
+    top: 2%;
+    margin-left: 10%;
+}
+.Menu {
     display: flex;
     flex-direction:row-reverse;
-    float: center right;
     margin-right: 25px;
     position: relative;
 }
- ul li {
-           display: inline-block;
-           line-height: 80px;
-           margin: 0 15px; 
-           align-items: center;             
-}
- ul li a {
+ .Menu a {
            position: relative;
            color: white;
            font-size: 15px;
            padding: 5px 0;
            text-decoration: none;
            text-transform: uppercase;
+           align-items: center;
            text-align: center;
            font-weight:bold;
 }
-nav ul li a:before{
+  a:before{
     position: absolute;
     content: '';
     left: 0;
@@ -352,7 +354,7 @@ nav ul li a:before{
     transform-origin: right;
     transition: transform .4s linear ;
 }
-nav ul li a:hover:before{
+  a:hover:before{
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -370,26 +372,22 @@ nav ul li a:hover:before{
 }
 table{
     background-color: #fafafa;
-    text-align: left;
-    border-collapse: collapse;
+    text-align: center;
     width: 100%;
     margin-bottom: 100px;
-    margin-top: 10%;
-    animation: bounce;
+    margin-top: 5%;
+    animation: pulse;
     animation-duration: 2s;
 }
-th, td{
- padding: 20px;
-}
+
 tr{
     background-color:#0b0e24 ;
-    border-bottom: solid ;
+    border-bottom: Solid;
     color: white;
     
 }
 table, th, td{
     border: 1px solid rgb(255, 255, 255);
-    border-collapse: collapse;
     font-family: sans-serif;
     color: #0ED352;
     border: 10px;
