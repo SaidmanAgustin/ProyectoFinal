@@ -14,7 +14,7 @@ html,body{
 }
 @media screen  and (min-width: 50px) and (max-width: 800px) {
                 /**menu**/
-    nav {
+    .Menu {
         display: flex;
         flex-direction: column;
         height: 80%;
@@ -22,28 +22,18 @@ html,body{
         background-color:#00BA7B ;
         font-family: sans-serif;  
         align-items: center;
-    }
-    nav img{
-        display: inline-block;
-        align-items: center;
-        width: 150px;   
-        margin-bottom: 5%;
-        
-    }
-    ul {
+        margin-top: 0%;
+    }      
+    .Menu {
         display: flex;
         flex-direction: column;
         text-align: center;
-    }
-    ul li {
-        display: flex;
-        flex-direction: column;
         margin-top: 20px;
         line-height: 200%; 
         align-items: center;   
                   
     }
-    ul li a {
+    .Menu a {
         display:flex;
         flex-direction: column;
         color: white;
@@ -56,11 +46,13 @@ html,body{
     }
                /**imagen de index**/
     #LOGO{
-        display: flex;
-        flex-direction: column;
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
         margin-left: 25%;
         text-align: center;
         width: 250px;  
+        position: relative;
          }
      .findepagina{
         color: gray;
