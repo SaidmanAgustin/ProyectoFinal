@@ -348,11 +348,12 @@ nav img{
 }
   a:hover:before{
     transform: scaleX(1);
-    transform-origin: left;
+    transform-origin: center;
 }
 #ANIMACIONMENU{
-    animation: bounce;
+    animation: pulse;
     animation-duration: 2s; 
+    animation-direction: reverse;
 }
         /**tabla de discos **/
 #TituloDiscos{
@@ -368,7 +369,7 @@ table{
     width: 100%;
     margin-bottom: 100px;
     margin-top: 5%;
-    animation: pulse;
+    animation:fadeIn;
     animation-duration: 2s;
 }
 
@@ -568,9 +569,10 @@ table, th, td{
    align-items: center;
    margin-bottom: 2%; 
    animation: flash, pulse; 
-   animation-iteration-count: infinite;
-   animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1)
-   
+   animation-duration: 0.6s;
+   animation-iteration-count: infinite; 
+   animation-timing-function:ease-out;
+  
 
    
 }
