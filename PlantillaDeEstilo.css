@@ -293,13 +293,14 @@ table, th, td{
     
 }
         /**menu**/   
-nav {
+nav{
     display:flex;
-    flex-direction:row;
-    height: 80px;
+    height: 50px;
     width: 100%;
     background-color:#00BA7B ;
     font-family: sans-serif;  
+    animation: pulse;
+    animation-duration: 2s;
 }
 nav img{
     display:flex;
@@ -317,24 +318,19 @@ nav img{
     top: 2%;
     margin-left: 10%;
 }
-.Menu {
+
+nav a{
     display: flex;
-    flex-direction:row-reverse;
-    margin-right: 25px;
-    position: relative;
+    flex-direction: row;
+    color: white;
+    font-size: 15px;
+    padding: 5px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:bold;
+           
 }
- .Menu a {
-           position: relative;
-           color: white;
-           font-size: 15px;
-           padding: 5px 0;
-           text-decoration: none;
-           text-transform: uppercase;
-           align-items: center;
-           text-align: center;
-           font-weight:bold;
-}
-  a:before{
+nav a:before{
     position: absolute;
     content: '';
     left: 0;
@@ -346,15 +342,11 @@ nav img{
     transform-origin: right;
     transition: transform .4s linear ;
 }
-  a:hover:before{
+ nav a:hover:before{
     transform: scaleX(1);
     transform-origin: center;
 }
-#ANIMACIONMENU{
-    animation: pulse;
-    animation-duration: 2s; 
-    animation-direction: reverse;
-}
+
         /**tabla de discos **/
 #TituloDiscos{
     color:#0ED352;
@@ -434,6 +426,10 @@ table, th, td{
      border-radius: 4px;
      box-shadow:2px 4px 6px;
      color: rgb(0, 0, 0);
+     animation:fadeIn;
+     animation-delay: 2s;
+     animation-duration: 2s;
+    
      
 }
 #ineditBIO{
@@ -442,6 +438,10 @@ table, th, td{
     border-radius: 4px; 
     box-shadow:2px 4px 6px;
     color:rgb(0, 0, 0);
+    animation:fadeIn;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    
 } 
 #BrunoLedesmaBIO{
     grid-area:"BrunoLedesma";
@@ -449,6 +449,10 @@ table, th, td{
     border-radius: 4px;
     box-shadow:2px 4px 6px;
     color:black;
+    animation:fadeIn;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    
 }
 #explicitsoundBIO{
     grid-area: "explicitsoundBIO";
@@ -456,6 +460,10 @@ table, th, td{
     border-radius: 4px;
     box-shadow:2px 4px 6px;
     color:black;
+    animation:fadeIn;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    
 }
 .TitulosPB{
     display: flex;
