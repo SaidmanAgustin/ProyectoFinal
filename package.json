@@ -5,7 +5,7 @@
   "name": "smokevisionrecords",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
-    "build:css": "node-sass --output-style compressed  Proyecto final real a entregar/scss/Main.scss  Proyecto final real a entregar/PlantillaDeEstilo.css"
+    "build:css": "node-sass --output-style compressed  Proyecto final real a entregar/scss/Main.scss  Proyecto final real a entregar/Main.css --watch"
   },
   "version": "1.0.0",
   "devDependencies": {
