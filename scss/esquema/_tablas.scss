@@ -1,0 +1,20 @@
+table{
+    background-color: #fafafa;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 5%;
+    animation:fadeIn;
+    animation-duration: 2s;
+}
+tr{
+    background-color:#0b0e24 ;
+    border-bottom: Solid;
+    color: white;
+}
+table, th, td{
+    border: 1px solid rgb(255, 255, 255);
+    font-family: sans-serif;
+    color: #0ED352;
+    border: 10px;
+}
