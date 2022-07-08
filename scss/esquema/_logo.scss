@@ -1,0 +1,13 @@
+#LOGO{ 
+    padding: none;
+    width: 400px; 
+    right: auto;
+    margin-top: 3%;
+    margin-left: 35%;
+    align-items: center;
+    margin-bottom: 2%; 
+    animation: flash, pulse; 
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite; 
+    animation-timing-function:ease-out;
+ }
