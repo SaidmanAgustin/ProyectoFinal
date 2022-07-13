@@ -1,11 +1,11 @@
 #LOGO{ 
+    display:inline-block;
     padding: none;
-    width: 400px; 
-    right: auto;
+    width: 350px; 
     margin-top: 3%;
-    margin-left: 35%;
     align-items: center;
     margin-bottom: 2%; 
+    position: relative;
     animation: flash, pulse; 
     animation-duration: 0.6s;
     animation-iteration-count: infinite; 

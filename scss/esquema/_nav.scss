@@ -1,13 +1,14 @@
-nav{
+#Menu{
      display:flex;
      height: 50px;
      width: 100%;
-     background-color:#00BA7B ;
+     background-color: #00BA7B;
      font-family: sans-serif;  
      animation: pulse;
-     animation-duration: 2s;  
+     animation-duration: 2s;
+         
         a{
-          flex-direction: row;
+          flex-direction: row-reverse;
           color: white;
           font-size: 15px;
           padding: 5px 0;
