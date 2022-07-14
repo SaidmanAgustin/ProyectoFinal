@@ -12,7 +12,7 @@ html,body{
     flex-direction: column;
     min-height: 100vh;
 }
-@media screen  and (min-width: 50px) and (max-width: 800px) {
+@media screen  and (min-width: 245px) and (max-width: 800px) {
                 /**menu**/
 .Menu {
         display: flex;
@@ -592,7 +592,6 @@ table, th, td{
      /**logo de menu**/
 #LOGOP{
     display: inline-block; 
-    background-color: #310311 solid;
     padding: none;
     margin-top: 2%;
     width: 400px; 

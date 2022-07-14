@@ -5,7 +5,7 @@
   "name": "smokevisionrecords",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
-    "build:css": "node-sass --output-style compressed scss/Main.scss Main.css"
+    "build:css": "node-sass --output-style compressed scss/Main.scss Stilo.css"
   },
   "version": "1.0.0",
   "devDependencies": {

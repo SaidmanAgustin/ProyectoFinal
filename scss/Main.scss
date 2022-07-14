@@ -1,6 +1,7 @@
-@import "miss/body.scss";
-@import "miss/variables";
-@import "esquema/_nav.scss";
-@import "esquema/_tablas.scss";
-@import "esquema/_logo";
-@import "esquema/_LogoFooter";
+@import "miss/body";
+@import "miss/mixin";
+@import "esquema/nav";
+@import "esquema/tablas";
+@import "esquema/logo";
+@import "esquema/LogoFooter";
+

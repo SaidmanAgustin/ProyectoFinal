@@ -1,14 +1,14 @@
 h1{
-    color:#0ED352;
-    text-align:center;
-    margin-top: 2%;
-    font-family: sans-serif;
-    animation:fadeIn;
-    animation-duration: 6s;
+    $color:#0ED352;
+    $text-align: center;
+    $margin-top: 2%;
+    $font-family: sans-serif;
+    $animation:fadeIn;
+    $animation-duration: 6s;
 }
 p{
-    color: gray;
-    text-align: center;
-    font-family: sans-serif;
-    width: 100%;
+    $color: gray;
+    $text-align: center;
+    $font-family: sans-serif;
+    $width: 100%;
 }

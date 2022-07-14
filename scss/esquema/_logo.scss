@@ -1,13 +1,22 @@
-#LOGO{ 
-    display:inline-block;
-    padding: none;
+@mixin logo{
     width: 350px; 
     margin-top: 3%;
-    align-items: center;
+    margin-left: 35%;
     margin-bottom: 2%; 
-    position: relative;
+    position:relative;
     animation: flash, pulse; 
-    animation-duration: 0.6s;
+    animation-duration: 0.9s;
     animation-iteration-count: infinite; 
     animation-timing-function:ease-out;
+}
+@mixin flex($dis, $direction, $just, $alin) {
+    display: $dis;
+    flex-flow: $direction;
+    justify-content: $just;
+    align-items: $alin;
+    
+}
+#LOGO{ 
+@include logo;
+@include flex(flex, row, left, center)
  }
