@@ -1,29 +1,23 @@
 $Colors: (
-  back:  #7a0027d8,
-  border: #000000,
+  backbuton:  #7a0027d8,
+  borde: #000000,
+  backsegui: #00BA7B,
+
 );
 @mixin Card{
     display: flex;
     width: 100%;
-    background-color: #7a0027d8;
+    background-color:map-get($Colors, backbuton );
     padding: 4px;
     border-radius: 3px;
     margin-bottom: 10px;
-    border:#000000 solid;
+    border:map-get($Colors, borde) solid;
     box-shadow: 5px 10px 15px #110000;
     font-family: sans-serif;
 }
 #titulocontacto{
-    text-align: center;
-    margin-top:2%;
-    text-decoration:none;
-    color:#0ED352;
-    margin-bottom: 10px;
-    font-size: 45px;
-    font-family: sans-serif;
-    text-shadow: 3px 6px 10px solid;
-    animation:fadeIn;
-    animation-duration: 6s;
+@extend .titulos ;
+
 }
 #textocontact{
     text-align: center;
@@ -44,7 +38,7 @@ $Colors: (
 }
 #seguidores{
     width: 350px;
-    background-color:#00BA7B;
+    background-color: map-get($Colors , backsegui);
     color: rgb(0, 0, 0);
     padding: 20px;
     margin: auto;
