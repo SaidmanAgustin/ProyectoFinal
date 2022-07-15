@@ -1,17 +1,46 @@
 $Colors: (
-  $back:  #7a0027d8,
-  $border: #000000 solid,
+  back:  #7a0027d8,
+  border: #000000,
 );
 @mixin Card{
     display: flex;
     width: 100%;
-    background-color: $back map-get($Colors: $back );
+    background-color: #7a0027d8;
     padding: 4px;
     border-radius: 3px;
     margin-bottom: 10px;
-    border:$border map-get($Colors:  $border );
+    border:#000000 solid;
     box-shadow: 5px 10px 15px #110000;
     font-family: sans-serif;
+}
+#titulocontacto{
+    text-align: center;
+    margin-top:2%;
+    text-decoration:none;
+    color:#0ED352;
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-family: sans-serif;
+    text-shadow: 3px 6px 10px solid;
+    animation:fadeIn;
+    animation-duration: 6s;
+}
+#textocontact{
+    text-align: center;
+    color:rgba(192, 192, 192, 0.877); 
+    margin-bottom: 15px;
+    font-size: 20px;
+    animation:fadeIn;
+    animation-duration: 6s;
+}
+#subtitulocontacto{
+     color:#0ed353c5;
+     text-align: center;
+     margin-bottom:5px;
+     font-size: 20px;
+     font-family: sans-serif;
+     animation:fadeIn;
+     animation-duration: 6s;
 }
 #seguidores{
     width: 350px;
