@@ -1,9 +1,12 @@
 @mixin logo{
+    display: inline-block; 
+    padding: none;
     width: 350px; 
-    margin-top: 3%;
-    margin-left: 35%;
+    margin-top: 2%;
     margin-bottom: 2%; 
-    position:relative;
+    right: auto;
+    margin-left: 35%;
+    align-items:center;
     animation: flash, pulse; 
     animation-duration: 0.9s;
     animation-iteration-count: infinite; 
