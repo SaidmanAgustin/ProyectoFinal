@@ -1,0 +1,74 @@
+$Colors: (
+  backbuton:  #7a0027d8,
+  borde: #000000,
+  backsegui: #00BA7B,
+
+);
+@mixin Card{
+    display: flex;
+    width: 100%;
+    background-color:map-get($Colors, backbuton );
+    padding: 4px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border:map-get($Colors, borde) solid;
+    box-shadow: 5px 10px 15px #110000;
+    font-family: sans-serif;
+}
+#TituloContacto{
+@extend .titulos ;
+
+}
+#textocontact{
+    text-align: center;
+    color:rgba(192, 192, 192, 0.877); 
+    margin-bottom: 15px;
+    font-size: 20px;
+    animation:fadeIn;
+    animation-duration: 6s;
+}
+#subtitulocontacto{
+     color:#0ed353c5;
+     text-align: center;
+     margin-bottom:5px;
+     font-size: 20px;
+     font-family: sans-serif;
+     animation:fadeIn;
+     animation-duration: 6s;
+}
+#seguidores{
+    width: 350px;
+    background-color: map-get($Colors , backsegui);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 8px ;
+    font-family: sans-serif;
+    font-variant:unset;
+    animation:fadeIn;
+    animation-duration: 6s;        
+}
+.Buton{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    background-color: #680222c7;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 18px #000000;
+}
+.Buton:hover{
+ background-color: rgba(105, 0, 0, 0.795);
+}
+#relleno{
+animation: jackInTheBox;
+animation-duration: 2s; 
+}
+.control{
+    @include Card();
+
+}

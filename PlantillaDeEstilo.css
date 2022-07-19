@@ -5,16 +5,14 @@
 html,body{
     margin:0;
     width: 100%;
-    position:relative;
     font-family: sans-serif;
     background-color: #0b0e24;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
+    position:relative;
 }
-@media all  and (min-width: 50px) and (max-width: 800px) {
-                /**menu**/
-    nav {
+@media screen  and (min-width: 245px) and (max-width: 800px) {
+                /**menu**/               
+.Menu {
         display: flex;
         flex-direction: column;
         height: 80%;
@@ -22,28 +20,17 @@ html,body{
         background-color:#00BA7B ;
         font-family: sans-serif;  
         align-items: center;
-    }
-    nav img{
-        display: inline-block;
-        align-items: center;
-        width: 150px;   
-        margin-bottom: 5%;
-        
-    }
-    ul {
+        margin-top: 0%;
+}      
+.Menu {
         display: flex;
         flex-direction: column;
         text-align: center;
-    }
-    ul li {
-        display: flex;
-        flex-direction: column;
         margin-top: 20px;
         line-height: 200%; 
-        align-items: center;   
-                  
-    }
-    ul li a {
+        align-items: center;                
+}
+.Menu a {
         display:flex;
         flex-direction: column;
         color: white;
@@ -53,16 +40,18 @@ html,body{
         text-align: center;
         font-weight:bold;
         top: 1%;
-    }
+}
                /**imagen de index**/
-    #LOGO{
-        display: flex;
-        flex-direction: column;
+#LOGO{
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
         margin-left: 25%;
         text-align: center;
         width: 250px;  
-         }
-     .findepagina{
+        position: relative;
+}
+.findepagina{
         color: gray;
         text-align: center;
         font-family: sans-serif;
@@ -72,23 +61,30 @@ html,body{
         position: relative;
 }
               /**grid pagina de productores**/
-   #Listaproductores{
-    display: grid;
-    grid-template-areas:
-    "saidmanBIO ineditBIO explicitsoundBIO BrunoLedesmaBIO"
-    "saidmanBIO ineditBIO explicitsoundBIO BrunoLedesmaBIO"
-    "saidmanBIO ineditBIO explicitsoundBIO BrunoLedesmaBIO"
-    "findepagina findepagina findepagina findepagina";
-    grid-template-columns: 1fr  1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 1fr 1fr ;
-    gap: 10px;
-    column-gap: 10px;
-    height: 100%;
-    padding: 4%;
-    font-family: sans-serif;
+#Listaproductores{
+        display:grid ;
+        grid-template-areas:
+        "saidmanBIO" 
+        "saidmanBIO"
+        "explicitsoundBIO "
+        "explicitsoundBIO "
+        "BrunoLedesmaBIO "
+        "BrunoLedesmaBIO "
+        "ineditBIO "
+        "ineditBIO ";
+        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        row-gap: 10px;
+        column-gap: 10px;
+        height:100%;
+        padding: 1%;
+        font-family: sans-serif;   
 }
 #saidmanBIO{
      grid-area:"saidmanBIO";
+     display: flex;
+     flex-direction: column;
      justify-items:left;
      border-radius: 4px;
      box-shadow:2px 4px 6px;
@@ -97,6 +93,8 @@ html,body{
 }
 #ineditBIO{
     grid-area:"ineditBIO";
+    display: flex;
+    flex-direction: column;
     justify-items: left;
     border-radius: 4px; 
     box-shadow:2px 4px 6px;
@@ -104,6 +102,8 @@ html,body{
 } 
 #BrunoLedesmaBIO{
     grid-area:"BrunoLedesma";
+    display: flex;
+    flex-direction: column;
     justify-items:left;
     border-radius: 4px;
     box-shadow:2px 4px 6px;
@@ -111,6 +111,8 @@ html,body{
 }
 #explicitsoundBIO{
     grid-area: "explicitsoundBIO";
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     border-radius: 4px;
     box-shadow:2px 4px 6px;
@@ -134,15 +136,16 @@ html,body{
 }
 .TextosBio{
     display: flex;
+    flex-direction: column;
     text-align:left;
     font-family: sans-serif;
     color:rgba(255, 255, 255, 0.76);
     font-weight:bold;
-    margin: 2%;
- }
+    margin-top: 1%;
+}
  #LOGOP{
     display:none; 
- }
+}
  #Tituloproductores{
     text-align: center;
     margin-top:2%;
@@ -216,7 +219,7 @@ html,body{
         border:#000000 solid;
         box-shadow: 5px 10px 15px #110000;
         font-family: sans-serif;
- }
+}
 .Buton{
           width: 100%;
           padding-top: 2%;
@@ -261,22 +264,21 @@ table, th, td{
     border: 10px;
 }
          /**pagina NOSOTROS**/
-#Titulonosotros{
+    #Titulonosotros{
             margin-top:2%;
             text-align: center;
             font-size: 25px;
             font-family: sans-serif;
-             color: #0ED352;
-        
-}
+             color: #0ED352;       
+    }
 #bio{
-            display:contents;
-            text-align: center;
-            font-family: sans-serif;
-            color: grey ;
-            text-shadow: 0 0 30px #000000;
-            margin-top: 100px;
-            margin-bottom: 150px;
+    display:contents;
+    text-align: center;
+    font-family: sans-serif;
+    color: grey ;
+    text-shadow: 0 0 30px #000000;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
 }
 @media screen and (min-width: 800px)and (max-width: 3000px){   
@@ -297,17 +299,17 @@ table, th, td{
 .pie{
     height: 50px;
     width: 100%;
-    align-items: center;
-    
+    align-items: center;   
 }
         /**menu**/   
-nav {
+nav{
     display:flex;
-    flex-direction:row;
-    height: 80px;
+    height: 50px;
     width: 100%;
     background-color:#00BA7B ;
     font-family: sans-serif;  
+    animation: pulse;
+    animation-duration: 2s;
 }
 nav img{
     display:flex;
@@ -317,30 +319,25 @@ nav img{
     top: 2%;
     margin-left: 10%;
 }
-ul {
-    display: flex;
+#LogoMenu{
+    display:flex;
     flex-direction:row-reverse;
-    float: center right;
-    margin-right: 25px;
+    width: 150px;
     position: relative;
+    top: 2%;
+    margin-left: 10%;
 }
- ul li {
-           display: inline-block;
-           line-height: 80px;
-           margin: 0 15px; 
-           align-items: center;             
+nav a{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 15px;
+    padding: 5px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:bold;          
 }
- ul li a {
-           position: relative;
-           color: white;
-           font-size: 15px;
-           padding: 5px 0;
-           text-decoration: none;
-           text-transform: uppercase;
-           text-align: center;
-           font-weight:bold;
-}
-nav ul li a:before{
+nav a:before{
     position: absolute;
     content: '';
     left: 0;
@@ -352,13 +349,9 @@ nav ul li a:before{
     transform-origin: right;
     transition: transform .4s linear ;
 }
-nav ul li a:hover:before{
+ nav a:hover:before{
     transform: scaleX(1);
-    transform-origin: left;
-}
-#ANIMACIONMENU{
-    animation: bounce;
-    animation-duration: 2s; 
+    transform-origin: center;
 }
         /**tabla de discos **/
 #TituloDiscos{
@@ -366,30 +359,25 @@ nav ul li a:hover:before{
     text-align:center;
     margin-top: 2%;
     font-family: sans-serif;
-
+    animation:fadeIn;
+    animation-duration: 6s;
 }
 table{
     background-color: #fafafa;
-    text-align: left;
-    border-collapse: collapse;
+    text-align: center;
     width: 100%;
     margin-bottom: 100px;
-    margin-top: 10%;
-    animation: bounce;
+    margin-top: 5%;
+    animation:fadeIn;
     animation-duration: 2s;
-}
-th, td{
- padding: 20px;
 }
 tr{
     background-color:#0b0e24 ;
-    border-bottom: solid ;
+    border-bottom: Solid;
     color: white;
-    
 }
 table, th, td{
     border: 1px solid rgb(255, 255, 255);
-    border-collapse: collapse;
     font-family: sans-serif;
     color: #0ED352;
     border: 10px;
@@ -398,73 +386,110 @@ table, th, td{
 #Titulonosotros{
     margin-top:2%;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-family: sans-serif;
      color: #0ED352;
-
+     animation:fadeIn;
+     animation-duration: 6s;
 }
 #bio{
-    display:contents;
+    display:flex;
     text-align: center;
     font-family: sans-serif;
     color: grey ;
-    text-shadow: 0 0 30px #000000;
-    margin-top: 100px;
-    margin-bottom: 150px;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    animation: fadeIn;
+    animation-duration: 6s;
 }
           /**pagina de productores**/
 #Tituloproductores{
     text-align: center;
-    margin-top:2%;
+    margin-top:1%;
     color:#0ED352;
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 10px;
     font-family: sans-serif;
     font-weight:normal;
+    animation: fadeIn;
+    animation-duration: 6s;
 }
          /**grid pagina de productores**/
 #Listaproductores{
     display:grid ;
     grid-template-areas:
-    "saidmanBIO ineditBIO explicitsoundBIO BrunoLedesmaBIO"
-    "saidmanBIO ineditBIO explicitsoundBIO BrunoLedesmaBIO"
-    "saidmanBIO ineditBIO explicitsoundBIO BrunoLedesmaBIO";
-    grid-template-columns: 1fr  1fr 1fr 1fr;
-    grid-template-rows: 2fr 3fr  ;
-    gap: 10px;
-   column-gap: 12px;
+    "saidmanBIO saidmanBIO" 
+    "saidmanBIO saidmanBIO"
+    "explicitsoundBIO explicitsoundBIO"
+    "explicitsoundBIO explicitsoundBIO"
+    "BrunoLedesmaBIO BrunoLedesmaBIO"
+    "BrunoLedesmaBIO BrunoLedesmaBIO"
+    "ineditBIO ineditBIO"
+    "ineditBIO ineditBIO";
+    grid-template-rows: 2fr ;
+    grid-template-columns:auto;
+    gap: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
     height:100%;
-    padding: 4%;
+    padding: 1%;
     font-family: sans-serif;   
 }
 #saidmanBIO{
      grid-area:"saidmanBIO";
-     justify-items:left;
+     display:flex;
+     flex-direction:column;
+     text-align: center;
+     margin-top: 0%;
+     font-size:small;
      border-radius: 4px;
      box-shadow:2px 4px 6px;
      color: rgb(0, 0, 0);
-     
+     animation:fadeIn;
+     animation-delay: 2s;
+     animation-duration: 2s;
 }
 #ineditBIO{
     grid-area:"ineditBIO";
-    justify-items: center;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    font-size:small;
+    margin-top: 0%;
     border-radius: 4px; 
     box-shadow:2px 4px 6px;
     color:rgb(0, 0, 0);
+    animation:fadeIn;
+    animation-delay: 3s;
+    animation-duration: 2s;  
 } 
 #BrunoLedesmaBIO{
     grid-area:"BrunoLedesma";
-    justify-items:right;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    margin-top: 0%;
+    font-size:small;
     border-radius: 4px;
     box-shadow:2px 4px 6px;
     color:black;
+    animation:fadeIn;
+    animation-delay: 4s;
+    animation-duration: 2s; 
 }
 #explicitsoundBIO{
     grid-area: "explicitsoundBIO";
-    justify-items: center;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    margin-top: 0%;
+    font-size:small;
     border-radius: 4px;
     box-shadow:2px 4px 6px;
     color:black;
+    animation:fadeIn;
+    animation-delay: 5s;
+    animation-duration: 2s; 
 }
 .TitulosPB{
     display: flex;
@@ -478,11 +503,14 @@ table, th, td{
 }
 .TextosBio{
     display: flex;
+    flex-direction: row;
     text-align:left;
+    padding: 0%;
     font-family: sans-serif;
     color:rgba(255, 255, 255, 0.76);
-    font-weight:bold;
-    margin: 2%;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-left: 2px;
 }
          /**pagina de eventos**/
 #listaEventos{
@@ -492,15 +520,21 @@ table, th, td{
     font-family: sans-serif;
     padding-bottom: 20px;
     margin-bottom: 120px;
-    text-align: center;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 2%;
+    animation:fadeIn;
+    animation-duration: 6s;
 }
 #ProximosEventos{
-    display:ruby-text-container;
-    margin-top:2%;
-    text-align:center;
+    display:flex;
+    margin-top:1%;
+    justify-content:center;
     color:#0ED352;
     font-size: 25px;
     font-family: sans-serif;
+    animation:fadeIn;
+    animation-duration: 6s;
 }
          /**pagina de contacto**/
 #textocontact{
@@ -508,6 +542,8 @@ table, th, td{
     color:rgba(192, 192, 192, 0.877); 
     margin-bottom: 15px;
     font-size: 20px;
+    animation:fadeIn;
+    animation-duration: 6s;
 }
 #titulocontacto{
     text-align: center;
@@ -518,7 +554,8 @@ table, th, td{
     font-size: 45px;
     font-family: sans-serif;
     text-shadow: 3px 6px 10px solid;
-
+    animation:fadeIn;
+    animation-duration: 6s;
 }
 #subtitulocontacto{
      color:#0ed353c5;
@@ -526,6 +563,8 @@ table, th, td{
      margin-bottom:5px;
      font-size: 20px;
      font-family: sans-serif;
+     animation:fadeIn;
+     animation-duration: 6s;
 }
 #seguidores{
         width: 350px;
@@ -537,7 +576,8 @@ table, th, td{
         border-radius: 8px ;
         font-family: sans-serif;
         font-variant:unset;
-            
+        animation:fadeIn;
+        animation-duration: 6s;        
 }
 .controls{
         width: 100%;
@@ -548,18 +588,18 @@ table, th, td{
         border:#000000 solid;
         box-shadow: 5px 10px 15px #110000;
         font-family: sans-serif;
- }
+}
 .Buton{
-          width: 100%;
-          padding-top: 2%;
-          padding-bottom: 2%;
-          margin-bottom: 4px;
-          border-radius: 5px;
-          font-family: sans-serif;
-          background-color: #680222c7;
-          color: white;
-          text-align: center;
-          box-shadow: 0px 0px 18px #000000;
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 4px;
+        border-radius: 5px;
+        font-family: sans-serif;
+        background-color: #680222c7;
+        color: white;
+        text-align: center;
+        box-shadow: 0px 0px 18px #000000;
 }
 .Buton:hover{
      background-color: rgba(105, 0, 0, 0.795);
@@ -573,18 +613,18 @@ table, th, td{
    padding: none;
    width: 400px; 
    right: auto;
-   margin-top:3%;
-   margin-left:35%;
+   margin-top: 3%;
+   margin-left: 35%;
    align-items: center;
    margin-bottom: 2%; 
    animation: flash, pulse; 
-   animation-duration: 10s; 
-   
+   animation-duration: 0.6s;
+   animation-iteration-count: infinite; 
+   animation-timing-function:ease-out;
 }
      /**logo de menu**/
 #LOGOP{
     display: inline-block; 
-    background-color: #310311 solid;
     padding: none;
     margin-top: 2%;
     width: 400px; 
@@ -592,13 +632,12 @@ table, th, td{
     position: relative;
     margin-left: 35%;
     align-items:center;
- }
+}
 .findepagina{
         color: gray;
         text-align: center;
         font-family: sans-serif;
         width: 100%;    
 }
-
 }
 
