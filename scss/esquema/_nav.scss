@@ -1,12 +1,12 @@
 #Menu{
-     display:flex;
-     height: 50px;
-     width: 100%;
-     background-color: #00BA7B;
-     font-family: sans-serif;  
-     animation: pulse;
-     animation-duration: 2s;
-         
+      display:flex;
+      height: 50px;
+      width: 100%;
+      background-color: #00BA7B;
+      font-family: sans-serif;  
+      animation: pulse;
+      animation-duration: 2s;
+
         a{
           flex-direction: row-reverse;
           font-size: 15px;
@@ -14,26 +14,26 @@
           text-decoration: none;
           text-transform: uppercase;
           font-weight:bold;          
-        
-             &:before{
-                    position: absolute;
-                    content: '';
-                    left: 0;
-                    bottom: 0;
-                    height: 3px;
-                    width: 100%;
-                    background: white;
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform .4s linear ;
-        
-                &:hover:before{
-                    transform: scaleX(1);
-                    transform-origin: center;
-                }
-    
-            }    
 
-       }
-}
+            &:before{
+                     position: absolute;
+                     content: '';
+                     left: 0;
+                     bottom: 0;
+                     height: 3px;
+                     width: 100%;
+                     background: white;
+                     transform: scaleX(0);
+                     transform-origin: right;
+                     transition: transform .4s linear ;
+
+                      &:hover:before{
+                                     transform: scaleX(1);
+                                     transform-origin: center;
+                                    }
+    
+                    }    
+
+         }
+     }
             

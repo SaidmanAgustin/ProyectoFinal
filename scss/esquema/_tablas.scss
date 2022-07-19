@@ -7,16 +7,16 @@ table{
       animation:fadeIn;
       animation-duration: 2s;
 
-    tr{
-      background-color:#0b0e24 ;
-      border-bottom: Solid;
-      color: white;
+        tr{
+           background-color:#0b0e24 ;
+           border-bottom: Solid;
+           color: white;
 
-       th, td{
-         border: 1px solid rgb(255, 255, 255);
-         font-family: sans-serif;
-         color: #0ED352;
-         border: 10px;
-        }
-    }    
-}
+             th, td{
+                    border: 1px solid rgb(255, 255, 255);
+                    font-family: sans-serif;
+                    color: #0ED352;
+                    border: 10px;
+                  }
+          }    
+      }
